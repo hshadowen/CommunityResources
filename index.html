@@ -5,7 +5,26 @@
 		<title>Geographic Mapping of Community Resources, Population Demographics, and Health Outcomes in Richmond City
 </title>
 		<style>
-			body {color:white; font-family: Arial, sans-serif; background-color:black;text-align:center;}
+			header {color:white; font-family: Arial, sans-serif; background-color:black; text-align:center;}
+			#introduction {background-color:white; color:black;}
+			#toc_container {
+			    background: #f9f9f9 none repeat scroll 0 0;
+			    border: 1px solid #aaa;
+			    display: table;
+			    font-size: 95%;
+			    margin-bottom: 1em;
+			    padding: 20px;
+			    width: auto;
+			}
+
+			.toc_title {
+			    font-weight: 700;
+			    text-align: center;
+			}
+
+			#toc_container li, #toc_container ul, #toc_container ul li{
+			    list-style: outside none none !important;
+			}
 		</style>
 	</head>
 	<body>
@@ -13,14 +32,15 @@
 		<h1>Geographic Mapping of Community Resources, Population Demographics, and Health Outcomes in Richmond City</h1>
 		<p>Kelly Cheung, Charlotte Crider, Hannah Shadowen MPH,  Kristen O'Loughlin MA, Hannah Rak, Paulette Lail Kashiri MPH, Alex Krist MD MPH</p>
 		</header>
-		<h3>Background:</h3> 
-		<p>Patients with multiple chronic conditions often struggle with behavioral health, mental health challenges, and unmet social needs. Primary care physicians are uniquely positioned to address these needs and connect patients to community resources. However, patients may face challenges to accessing these resources such as geographic distance, paperwork requirements, or costs of the resources. It is important to understand if community resources are in areas of need and the characteristics of the resources.</p>
-		<h3>Objective:</h3> 
-		<p>To better understand the geographic distribution of resources for health behavior, mental health, and social needs in relation to needs within the community.</p> 
-		<h3>Methods:</h3> 
-		<p>Community resources identified with Aunt Bertha and RVA Community Cares Complete Resource Directory. Population characteristics relating to 10 different health behaviors, mental health needs, and social needs were mapped at the Census Tract Level using ArcGIS and publicly available data. Incremental spatial autocorrelation was used to calculate the distance value in which spatial correlation was greatest for each domain. The distance value was then used for hot spot analysis. Hotspots (red areas) are areas where the clusters have significantly higher rates of the outcome of interest compared to the mean of all census tracts. Cold spots (gray areas) are areas that have lower rates of the outcome of interest than the mean of all the census tracts.</p> 
-		<h3>Data:</h3> 
-		<p>To view each of the maps for 10 different domains of interest please click below.</p> 
+		<div id="introduction">
+			<h3>Background:</h3> 
+			<p>Patients with multiple chronic conditions often struggle with behavioral health, mental health challenges, and unmet social needs. Primary care physicians are uniquely positioned to address these needs and connect patients to community resources. However, patients may face challenges to accessing these resources such as geographic distance, paperwork requirements, or costs of the resources. It is important to understand if community resources are in areas of need and the characteristics of the resources.</p>
+			<h3>Objective:</h3> 
+			<p>To better understand the geographic distribution of resources for health behavior, mental health, and social needs in relation to needs within the community.</p> 
+			<h3>Methods:</h3> 
+			<p>Community resources identified with Aunt Bertha and RVA Community Cares Complete Resource Directory. Population characteristics relating to 10 different health behaviors, mental health needs, and social needs were mapped at the Census Tract Level using ArcGIS and publicly available data. Incremental spatial autocorrelation was used to calculate the distance value in which spatial correlation was greatest for each domain. The distance value was then used for hot spot analysis. Hotspots (red areas) are areas where the clusters have significantly higher rates of the outcome of interest compared to the mean of all census tracts. Cold spots (gray areas) are areas that have lower rates of the outcome of interest than the mean of all the census tracts.</p> 
+			<h3>Data:</h3> 
+			<p>To view each of the maps for 10 different domains of interest please click below.</p> 
 
 		<div id="toc_container">
 		<p class="toc_title">Table of Contents</p>
