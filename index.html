@@ -33,7 +33,7 @@
 			.thumbnail {
   			max-width: 40%;
 			}
-			.italic { font-style: italic; }
+			.italic { font-style: italic; text-align:center;}
 			.small { font-size: 0.8em; }
 
 /** LIGHTBOX MARKUP **/
@@ -100,9 +100,23 @@
 		<hr>
 		<h2 id="AllResources">All Resources</h2>
 		<h2 id="Nutrition">Nutrition</h2>
-			<img src="images/domain2_web_map1.jpg" alt="Nutrition Map 1" />
-			<img src="images/domain2_hotspot_cos_map2.jpg" alt="Nutrition Map 2" />
-			<img src="images/domain2_hotspot_docs_map3.jpg" alt="Nutrition Map 3" />
+			<a href="#nutritionmap1"><img src="images/domain2_nutrition/domain2_web_map1.jpg" class="thumbnail"></a>
+			<!-- lightbox container hidden with CSS -->
+			<a href="#_" class="lightbox" id="map1"><img src="images/domain2_nutrition/domain2_web_map1.jpg"></a>
+			<p class="italic small" >Nutrition Map 1</p>
+			
+			<a href="#nutritionmap2"><img src="images/domain2_nutrition/domain2_hotspot_cos_map2.jpg" class="thumbnail"></a>
+			<!-- lightbox container hidden with CSS -->
+			<a href="#_" class="lightbox" id="map1"><img src="images/domain2_nutrition/domain2_hotspot_cos_map2.jpg"></a>
+			<p class="italic small" >Nutrition Map 2</p>
+
+			<a href="#nutritionmap3"><img src="images/domain2_nutrition/domain2_hotspot_docs_map3.jpg" class="thumbnail"></a>
+			<!-- lightbox container hidden with CSS -->
+			<a href="#_" class="lightbox" id="map1"><img src="images/domain2_nutrition/domain2_hotspot_docs_map3.jpg"></a>
+			<p class="italic small" >Nutrition Map 3</p>
+
+			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
+
 		<h2 id="PhysicalActivity">Physical Activity</h2>
 		<h2 id="Smoking">Smoking</h2>
 		<h2 id="SubstanceUse">Substance Use</h2>
