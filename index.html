@@ -37,7 +37,7 @@
 			.small { font-size: 0.8em; }
 
 /** LIGHTBOX MARKUP **/
-			<!--.lightbox {
+			.lightbox {
 				/** Default lightbox to hidden */
 				display: none;
 				/** Position and style */
@@ -65,141 +65,7 @@
 			}
 			#map_images {
 				text-align:center;
-			}-->
-
-		* {
-		  box-sizing: border-box;
-		}
-		.lightbox2 {
-			text-align:center;
-		}
-		.row > .column {
-		  padding: 0 8px;
-		}
-
-		.row:after {
-		  content: "";
-		  display: table;
-		  clear: both;
-		}
-
-		.column {
-		  float: left;
-		  width: 25%;
-		}
-
-		/* The Modal (background) */
-		.modal {
-		  display: none;
-		  position: fixed;
-		  z-index: 1;
-		  padding-top: 100px;
-		  left: 0;
-		  top: 0;
-		  width: 100%;
-		  height: 100%;
-		  overflow: auto;
-		  background-color: black;
-		}
-
-		/* Modal Content */
-		.modal-content {
-		  position: relative;
-		  background-color: #fefefe;
-		  margin: auto;
-		  padding: 0;
-		  width: 90%;
-		  max-width: 1200px;
-		}
-
-		/* The Close Button */
-		.close {
-		  color: white;
-		  position: absolute;
-		  top: 10px;
-		  right: 25px;
-		  font-size: 35px;
-		  font-weight: bold;
-		}
-
-		.close:hover,
-		.close:focus {
-		  color: #999;
-		  text-decoration: none;
-		  cursor: pointer;
-		}
-
-		.mySlides {
-		  display: none;
-		}
-
-		.cursor {
-		  cursor: pointer;
-		}
-
-		/* Next & previous buttons */
-		.prev,
-		.next {
-		  cursor: pointer;
-		  position: absolute;
-		  top: 50%;
-		  width: auto;
-		  padding: 16px;
-		  margin-top: -50px;
-		  color: #FABE12;
-		  background-color: rgba(0, 0, 0, 0.8);
-		  font-weight: bold;
-		  font-size: 50px;
-		  transition: 0.6s ease;
-		  border-radius: 0 3px 3px 0;
-		  user-select: none;
-		  -webkit-user-select: none;
-		}
-
-		/* Position the "next button" to the right */
-		.next {
-		  right: 0;
-		  border-radius: 3px 0 0 3px;
-		}
-
-		/* On hover, add a black background color with a little bit see-through */
-
-		/* Number text (1/3 etc) */
-		.numbertext {
-		  color: #f2f2f2;
-		  font-size: 12px;
-		  padding: 8px 12px;
-		  position: absolute;
-		  top: 0;
-		}
-
-		img {
-		  margin-bottom: -4px;
-		}
-
-		.caption-container {
-		  text-align: center;
-		  background-color: black;
-		  padding: 2px 16px;
-		  color: white;
-		}
-
-		.demo {
-		  opacity: 0.6;
-		}
-
-		.active,
-		.demo:hover {
-		  opacity: 1;
-		}
-
-		img.hover-shadow {
-		  transition: 0.3s;
-		}
-
-		.hover-shadow:hover {
-		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		}
+			}
 		</style>
 	</head>
 	<body>
@@ -236,6 +102,11 @@
 		</div>
 		<hr>
 		<h2 id="AllResources">All Resources</h2>
+		<div id="map_images">
+			<a href="#allresourcesmap"><img src="images/testmap1.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="nutritionmap1"><img src="images/testmap1.jpg"></a>
+			<p class="italic small" >All Resources Map</p>
+		</div>
 		<h2 id="Nutrition">Nutrition</h2>
 		<div id="map_images">
 			<a href="#nutritionmap1"><img src="images/domain2_nutrition/domain2_web_map1.jpg" class="thumbnail"></a>
@@ -290,154 +161,50 @@
 		</div>
 			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
 		<h2 id="MentalHealth">Mental Health</h2>
+		<div id="map_images">
+			<a href="#mentalhealth1"><img src="images/domain6_mentalhealth/domain6_final_map1.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="mentalhealth1"><img src="images/domain6_mentalhealth/domain6_final_map1.jpg"></a>
+			<p class="italic small" >Mental Health Map 1</p>
+			<a href="#mentalhealth2"><img src="images/domain6_mentalhealth/domain6_hotspot_cost_map2.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="mentalhealth2"><img src="images/domain6_mentalhealth/domain6_hotspot_cost_map2.jpg"></a>
+			<p class="italic small" >Mental Health Map 2</p>
+			<a href="#mentalhealth3"><img src="images/domain6_mentalhealth/domain6_hotspot_docs_map3.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="mentalhealth3"><img src="images/domain6_mentalhealth/domain6_hotspot_docs_map3.jpg"></a>
+			<p class="italic small" >Mental Health Map 3</p>
+		</div>
+			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
 		<h2 id="Financial">Financial</h2>
+		<div id="map_images">
+			<a href="#financial1"><img src="images/domain7_financial/domain7_final_map1.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="financial1"><img src="images/domain7_financial/domain7_final_map1.jpg"></a>
+			<p class="italic small" >Financial Map 1</p>
+			<a href="#financial2"><img src="images/domain7_financial/domain7_hotspot_cost_map2.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="financial2"><img src="images/domain7_financial/domain7_hotspot_cost_map2.jpg"></a>
+			<p class="italic small" >Financial Map 2</p>
+			<a href="#financial3"><img src="images/domain7_financial/domain7_hotspot_docs_map3.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="financial3"><img src="images/domain7_financial/domain7_hotspot_docs_map3.jpg"></a>
+			<p class="italic small" >Financial Map 3</p>
+		</div>
+			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
 		<h2 id="Employment">Employment</h2>
+		<div id="map_images">
+			<a href="#employment1"><img src="images/domain8_employment/domain8_final_map1.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="employment1"><img src="images/domain8_employment/domain8_final_map1.jpg"></a>
+			<p class="italic small" >Employment Map 1</p>
+			<a href="#employment2"><img src="images/domain8_employment/domain8_hotspot_cost_map2.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="employment2"><img src="images/domain8_employment/domain8_hotspot_cost_map2.jpg"></a>
+			<p class="italic small" >Employment Map 2</p>
+			<a href="#employment3"><img src="images/domain8_employment/domain8_hotspot_docs_map3.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="employment3"><img src="images/domain8_employment/domain8_hotspot_docs_map3.jpg"></a>
+			<p class="italic small" >Employment Map 3</p>
+		</div>
+			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
+
 		<h2 id="FoodSecurity">Food Security</h2>
 		<h2 id="Transportation">Transportation</h2>
-			<div class="row">
-			  <div class="column">
-			    <img src="images/domain10_transportation/domain10_final_map1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-			  </div>
-			  <div class="column">
-			    <img src="images/domain10_transportation/domain10_cost_map2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-			  </div>
-			  <div class="column">
-			    <img src="images/domain10_transportation/domain10_docs_map3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-			  </div>
-			</div>
-
-			<div id="myModal" class="modal">
-			  <span class="close cursor" onclick="closeModal()">&times;</span>
-			  <div class="modal-content">
-
-			    <div class="mySlides">
-			      <div class="numbertext">1 / 4</div>
-			      <img src="images/domain10_transportation/domain10_final_map1.jpg" style="width:100%">
-			    </div>
-
-			    <div class="mySlides">
-			      <div class="numbertext">2 / 4</div>
-			      <img src="images/domain10_transportation/domain10_cost_map2.jpg" style="width:100%">
-			    </div>
-
-			    <div class="mySlides">
-			      <div class="numbertext">3 / 4</div>
-			      <img src="images/domain10_transportation/domain10_docs_map3.jpg" style="width:100%">
-			    </div>
-			    
-			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-			    <div class="caption-container">
-			      <p id="caption"></p>
-			    </div>
-
-
-			    <div class="column">
-			      <img class="demo cursor" src="images/domain10_transportation/domain10_final_map1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Transportation Map 1">
-			    </div>
-			    <div class="column">
-			      <img class="demo cursor" src="images/domain10_transportation/domain10_cost_map2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Transportation Map 2">
-			    </div>
-			    <div class="column">
-			      <img class="demo cursor" src="images/domain10_transportation/domain10_docs_map3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Transportation Map 3">
-			    </div>
-			  </div>
-			</div>
 		<h2 id="Housing">Housing</h2>
 			<p>Below are the maps investigating the relationship between housing insecurity and housing resources in Richmond, VA. The Eviction Rate was mapped using the Eviction Rate published by the Eviction Lab. Map 1 is a descriptive map portraying the eviction rate in each census tract of Richmond, VA. The rate was categorized by quintiles. Map 2 and 3 display the results from the hot spot cluster analysis using eviction rates to identify statistically significant clusters of eviction rates. The high need areas are the red census tracts which show clusters that are at least 1.68 Standard Deviations above the mean of eviction rate of Richmond VA census tracts. The low need areas are the blue census tracts that show clusters that are at least 1.68 Standard Deviations below the mean of eviction rate of Richmond, VA census tracts. Map 2 also displays the number of housing resources by the type of payment required. The yellow dots are resources that are free, the blue-green dots are resources that are offered at a reduced cost, the black dots are resources that cost without any reduced fees, and the gray dots are resources without any data on cost. For Map 3 the yellow dots are resources that do not require paperwork (government issued ID, Driver’s license, photo ID, social security card, social security income statement, proof of income, utility bill, eviction notice, court documents, child’s birth certificate, proof of residency, or other). The black dots are resources that do require any paperwork and gray dots are resources that have no data on paperwork requirements.</p>
-		<div class="row">
-		  <div class="column">
-		    <img src="images/domain11_housing/domain11_final_web_map1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-		  </div>
-		  <div class="column">
-		    <img src="images/domain11_housing/domain11_hotspot_cost_map2.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-		  </div>
-		  <div class="column">
-		    <img src="images/domain11_housing/domain11_hotspot_docs_map3.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-		  </div>
-		</div>
-
-		<div id="myModal" class="modal">
-		  <span class="close cursor" onclick="closeModal()">&times;</span>
-		  <div class="modal-content">
-
-		    <div class="mySlides">
-		      <div class="numbertext">1 / 4</div>
-		      <img src="images/domain11_housing/domain11_final_web_map1.jpg" style="width:100%">
-		    </div>
-
-		    <div class="mySlides">
-		      <div class="numbertext">2 / 4</div>
-		      <img src="images/domain11_housing/domain11_hotspot_cost_map2.jpg" style="width:100%">
-		    </div>
-
-		    <div class="mySlides">
-		      <div class="numbertext">3 / 4</div>
-		      <img src="images/domain11_housing/domain11_hotspot_docs_map3.jpg" style="width:100%">
-		    </div>
-		    
-		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-		    <div class="caption-container">
-		      <p id="caption"></p>
-		    </div>
-
-
-		    <div class="column">
-		      <img class="demo cursor" src="images/domain11_housing/domain11_final_web_map1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Housing Map 1">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="images/domain11_housing/domain11_hotspot_cost_map2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Housing Map 2">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="images/domain11_housing/domain11_hotspot_docs_map3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Housing Map 3">
-		    </div>
-		  </div>
-		</div>
-		<footer>
-			<img src="images/vculogo.jpg" alt="vcu logo" />
-		</footer>
-
-		<script>
-		function openModal() {
-		  document.getElementById("myModal").style.display = "block";
-		}
-
-		function closeModal() {
-		  document.getElementById("myModal").style.display = "none";
-		}
-
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
-		  var captionText = document.getElementById("caption");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		      dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
-		  captionText.innerHTML = dots[slideIndex-1].alt;
-		}
-		</script>
+		
 	</body>
 	
 </html>
