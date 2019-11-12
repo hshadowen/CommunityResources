@@ -37,7 +37,7 @@
 			.small { font-size: 0.8em; }
 
 /** LIGHTBOX MARKUP **/
-			.lightbox {
+			<!--.lightbox {
 				/** Default lightbox to hidden */
 				display: none;
 				/** Position and style */
@@ -65,7 +65,142 @@
 			}
 			#map_images {
 				text-align:center;
-			}
+			}-->
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		.row > .column {
+		  padding: 0 8px;
+		}
+
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		.column {
+		  float: left;
+		  width: 25%;
+		}
+
+		/* The Modal (background) */
+		.modal {
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 100px;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		  overflow: auto;
+		  background-color: black;
+		}
+
+		/* Modal Content */
+		.modal-content {
+		  position: relative;
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 0;
+		  width: 90%;
+		  max-width: 1200px;
+		}
+
+		/* The Close Button */
+		.close {
+		  color: white;
+		  position: absolute;
+		  top: 10px;
+		  right: 25px;
+		  font-size: 35px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #999;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		.mySlides {
+		  display: none;
+		}
+
+		.cursor {
+		  cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		img {
+		  margin-bottom: -4px;
+		}
+
+		.caption-container {
+		  text-align: center;
+		  background-color: black;
+		  padding: 2px 16px;
+		  color: white;
+		}
+
+		.demo {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		}
+
+		img.hover-shadow {
+		  transition: 0.3s;
+		}
+
+		.hover-shadow:hover {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
 		</style>
 	</head>
 	<body>
@@ -130,7 +265,31 @@
 		</div>
 			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
 		<h2 id="Smoking">Smoking</h2>
+		<div id="map_images">
+			<a href="#smokingmap1"><img src="images/domain4_smoking/domain4_final_old_map1.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="smokingmap1"><img src="images/domain4_smoking/domain4_final_old_map1.jpg"></a>
+			<p class="italic small" >Smoking Map 1</p>
+			<a href="#smokingmap2"><img src="images/domain4_smoking/domain4_final_hotspot_cost_map2.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="smokingmap2"><img src="images/domain4_smoking/domain4_final_hotspot_cost_map2.jpg"></a>
+			<p class="italic small" >Smoking Map 2</p>
+			<a href="#smokingmap3"><img src="images/domain4_smoking/domain4_final_hotspot_docs_map3.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="smokingmap3"><img src="images/domain4_smoking/domain4_final_hotspot_docs_map3.jpg"></a>
+			<p class="italic small" >Smoking Map 3</p>
+		</div>
+			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
 		<h2 id="SubstanceUse">Substance Use</h2>
+		<div id="map_images">
+			<a href="#substanceuse1"><img src="images/domain5_substanceuse/domain5_final_map1.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="substanceuse1"><img src="images/domain5_substanceuse/domain5_final_map1.jpg"></a>
+			<p class="italic small" >Substance Use Map 1</p>
+			<a href="#substanceuse2"><img src="images/domain5_substanceuse/domain5_hotspot_cost_map2.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="substanceuse2"><img src="images/domain5_substanceuse/domain5_hotspot_cost_map2.jpg"></a>
+			<p class="italic small" >Substance Use Map 2</p>
+			<a href="#substanceuse3"><img src="images/domain5_substanceuse/domain5_hotspot_docs_map3.jpg" class="thumbnail"></a>
+			<a href="#_" class="lightbox" id="substanceuse3"><img src="images/domain5_substanceuse/domain5_hotspot_docs_map3.jpg"></a>
+			<p class="italic small" >Substance Use Map 3</p>
+		</div>
+			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
 		<h2 id="MentalHealth">Mental Health</h2>
 		<h2 id="Financial">Financial</h2>
 		<h2 id="Employment">Employment</h2>
@@ -138,14 +297,111 @@
 		<h2 id="Transportation">Transportation</h2>
 		<h2 id="Housing">Housing</h2>
 			<p>Below are the maps investigating the relationship between housing insecurity and housing resources in Richmond, VA. The Eviction Rate was mapped using the Eviction Rate published by the Eviction Lab. Map 1 is a descriptive map portraying the eviction rate in each census tract of Richmond, VA. The rate was categorized by quintiles. Map 2 and 3 display the results from the hot spot cluster analysis using eviction rates to identify statistically significant clusters of eviction rates. The high need areas are the red census tracts which show clusters that are at least 1.68 Standard Deviations above the mean of eviction rate of Richmond VA census tracts. The low need areas are the blue census tracts that show clusters that are at least 1.68 Standard Deviations below the mean of eviction rate of Richmond, VA census tracts. Map 2 also displays the number of housing resources by the type of payment required. The yellow dots are resources that are free, the blue-green dots are resources that are offered at a reduced cost, the black dots are resources that cost without any reduced fees, and the gray dots are resources without any data on cost. For Map 3 the yellow dots are resources that do not require paperwork (government issued ID, Driver’s license, photo ID, social security card, social security income statement, proof of income, utility bill, eviction notice, court documents, child’s birth certificate, proof of residency, or other). The black dots are resources that do require any paperwork and gray dots are resources that have no data on paperwork requirements.</p>
-			<a href="#map1"><img src="images/testmap1.jpg" class="thumbnail"></a>
-			<!-- lightbox container hidden with CSS -->
-			<a href="#_" class="lightbox" id="map1"><img src="images/testmap1.jpg"></a>
-			<p class="italic small">Map 1</p>
-			<p style="float:right;"><a href="#toc_container">Back to Table of Contents &rarr;</a></p>
+			
+		<h2 id="Test">Test Housing</h2>
+		<div class="row">
+		  <div class="column">
+		    <img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		  </div>
+		</div>
+
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+
+		    <div class="mySlides">
+		      <div class="numbertext">1 / 4</div>
+		      <img src="img_nature_wide.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">2 / 4</div>
+		      <img src="img_snow_wide.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">3 / 4</div>
+		      <img src="img_mountains_wide.jpg" style="width:100%">
+		    </div>
+		    
+		    <div class="mySlides">
+		      <div class="numbertext">4 / 4</div>
+		      <img src="img_lights_wide.jpg" style="width:100%">
+		    </div>
+		    
+		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		    <div class="caption-container">
+		      <p id="caption"></p>
+		    </div>
+
+
+		    <div class="column">
+		      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+		    </div>
+		  </div>
+		</div>
 		<footer>
 			<img src="images/vculogo.jpg" alt="vcu logo" />
 		</footer>
+
+	<script>
+	function openModal() {
+	  document.getElementById("myModal").style.display = "block";
+	}
+
+	function closeModal() {
+	  document.getElementById("myModal").style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>
 	</body>
 	
 </html>
